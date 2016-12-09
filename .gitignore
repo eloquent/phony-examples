@@ -1,7 +1,3 @@
-/build/
-/coverage/
-/doc/*.html
-/doc/example/**/coverage/
+/example/**/coverage/
+/php-cs-fixer
 /vendor/
-/web/
-README.html

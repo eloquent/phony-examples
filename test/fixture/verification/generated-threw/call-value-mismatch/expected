@@ -1,7 +1,0 @@
-%RESET%Expected %BOLD%stub#0[label]%RESET% call #1 to behave like:
-    %GREEN%✓%RESET% Returned Generator, then:
-        %RED%✗%RESET% Threw RuntimeException#1{message: "DUGONG"}
-%RED%✗%RESET% Call #1 - stub#0[label]("bonobo"):
-    %RED%✗%RESET% Returned Generator#3{}, then:
-        - Started iterating
-        %RED%✗%RESET% Threw RuntimeException#%CYAN%%FAINT%[-%RESET%%CYAN%%UNDERLINE%1%RESET%%CYAN%%FAINT%-]%RESET%%YELLOW%%FAINT%{+%RESET%%YELLOW%%UNDERLINE%2%RESET%%YELLOW%%FAINT%+}%RESET%{message: "%CYAN%%FAINT%[-%RESET%%CYAN%%UNDERLINE%DUGONG%RESET%%CYAN%%FAINT%-]%RESET%%YELLOW%%FAINT%{+%RESET%%YELLOW%%UNDERLINE%BONOBO%RESET%%YELLOW%%FAINT%+}%RESET%"}

@@ -1,75 +1,20 @@
 <?php
 
-$finder = Symfony\CS\Finder\DefaultFinder::create()
+$finder = PhpCsFixer\Finder::create()
     ->in(__DIR__)
-    ->exclude(
-        array(
-            'build',
-            'coverage',
-            'test/fixture',
-            'vendor',
-            'web',
-        )
-    )
-    ->notPath('test/src/Test/TestInterfaceWithKeywordMethods.php');
+    ->exclude(['vendor']);
 
-return Symfony\CS\Config\Config::create()
-    ->level(Symfony\CS\FixerInterface::PSR2_LEVEL)
-    ->fixers(
-        array(
-            // symfony
-            'array_element_no_space_before_comma',
-            'array_element_white_space_after_comma',
-            'blankline_after_open_tag',
-            'duplicate_semicolon',
-            'extra_empty_lines',
-            'function_typehint_space',
-            'include',
-            'join_function',
-            'list_commas',
-            'multiline_array_trailing_comma',
-            'namespace_no_leading_whitespace',
-            'new_with_braces',
-            'no_blank_lines_after_class_opening',
-            'no_empty_lines_after_phpdocs',
-            'object_operator',
-            'operators_spaces',
-            'phpdoc_indent',
-            'phpdoc_params',
-            'phpdoc_scalar',
-            'phpdoc_short_description',
-            'phpdoc_to_comment',
-            'phpdoc_trim',
-            'phpdoc_type_to_var',
-            'phpdoc_types',
-            'phpdoc_var_without_name',
-            'pre_increment',
-            'print_to_echo',
-            'remove_leading_slash_use',
-            'remove_lines_between_uses',
-            'return',
-            'self_accessor',
-            'short_bool_cast',
-            'single_array_no_trailing_comma',
-            'single_blank_line_before_namespace',
-            'single_quote',
-            'spaces_before_semicolon',
-            'spaces_cast',
-            'standardize_not_equal',
-            'ternary_spaces',
-            'trim_array_spaces',
-            'unary_operators_spaces',
-            'unneeded_control_parentheses',
-            'unused_use',
-            'whitespacy_lines',
+return PhpCsFixer\Config::create()
+    ->setRules([
+        '@Symfony' => true,
 
-            // contrib
-            'concat_with_spaces',
-            'multiline_spaces_before_semicolon',
-            'ordered_use',
-
-            // specific to this project
-            'long_array_syntax',
-        )
-    )
-    ->finder($finder);
+        'array_syntax' => ['syntax' => 'short'],
+        'braces' => false,
+        'binary_operator_spaces' => false,
+        'class_definition' => ['singleLine' => false],
+        'concat_space' => ['spacing' => 'one'],
+        'no_multiline_whitespace_around_double_arrow' => false,
+        'phpdoc_annotation_without_dot' => false,
+        'phpdoc_separation' => false,
+    ])
+    ->setFinder($finder);
