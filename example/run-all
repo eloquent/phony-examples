@@ -6,12 +6,8 @@ EXAMPLE="event-emitter"
 echo "Event emitter examples ========================================================="
 echo
 
-echo "Peridot example ----------------------------------------------------------------"
-"${BASH_SOURCE%/*}/$EXAMPLE/peridot/run"
-echo
-
-echo "Pho example --------------------------------------------------------------------"
-"${BASH_SOURCE%/*}/$EXAMPLE/pho/run"
+echo "Kahlan example -----------------------------------------------------------------"
+"${BASH_SOURCE%/*}/$EXAMPLE/kahlan/run"
 echo
 
 echo "PHPUnit example ----------------------------------------------------------------"

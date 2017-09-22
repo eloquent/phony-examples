@@ -1,15 +1,15 @@
 <?php
 
-use Eloquent\Phony as x;
+use function Eloquent\Phony\Kahlan\spy;
 
 describe('EventEmitter', function () {
     beforeEach(function () {
         $this->emitter = new EventEmitter();
 
-        $this->spyA = x\spy();
-        $this->spyB = x\spy();
-        $this->spyC = x\spy();
-        $this->spyD = x\spy();
+        $this->spyA = spy();
+        $this->spyB = spy();
+        $this->spyC = spy();
+        $this->spyD = spy();
     });
 
     describe('on()', function () {
@@ -20,8 +20,8 @@ describe('EventEmitter', function () {
             $this->emitter->on('eventB', $this->spyD);
             $this->emitter->on('eventA', $this->spyA);
 
-            expect($this->emitter->listeners('eventA'))->to->be->equal([$this->spyA, $this->spyC, $this->spyA]);
-            expect($this->emitter->listeners('eventB'))->to->be->equal([$this->spyB, $this->spyD]);
+            expect($this->emitter->listeners('eventA'))->toBe([$this->spyA, $this->spyC, $this->spyA]);
+            expect($this->emitter->listeners('eventB'))->toBe([$this->spyB, $this->spyD]);
         });
     });
 
@@ -46,23 +46,23 @@ describe('EventEmitter', function () {
             $this->emitter->on('eventA', $this->spyA);
             $this->emitter->on('eventB', $this->spyA);
 
-            expect($this->emitter->listeners('eventA'))->to->be->equal([$this->spyA, $this->spyB, $this->spyA]);
-            expect($this->emitter->listeners('eventB'))->to->be->equal([$this->spyA]);
+            expect($this->emitter->listeners('eventA'))->toBe([$this->spyA, $this->spyB, $this->spyA]);
+            expect($this->emitter->listeners('eventB'))->toBe([$this->spyA]);
 
             $this->emitter->removeListener('eventA', $this->spyA);
 
-            expect($this->emitter->listeners('eventA'))->to->be->equal([$this->spyB, $this->spyA]);
-            expect($this->emitter->listeners('eventB'))->to->be->equal([$this->spyA]);
+            expect($this->emitter->listeners('eventA'))->toBe([$this->spyB, $this->spyA]);
+            expect($this->emitter->listeners('eventB'))->toBe([$this->spyA]);
 
             $this->emitter->removeListener('eventA', $this->spyA);
 
-            expect($this->emitter->listeners('eventA'))->to->be->equal([$this->spyB]);
-            expect($this->emitter->listeners('eventB'))->to->be->equal([$this->spyA]);
+            expect($this->emitter->listeners('eventA'))->toBe([$this->spyB]);
+            expect($this->emitter->listeners('eventB'))->toBe([$this->spyA]);
 
             $this->emitter->removeListener('eventA', $this->spyA);
 
-            expect($this->emitter->listeners('eventA'))->to->be->equal([$this->spyB]);
-            expect($this->emitter->listeners('eventB'))->to->be->equal([$this->spyA]);
+            expect($this->emitter->listeners('eventA'))->toBe([$this->spyB]);
+            expect($this->emitter->listeners('eventB'))->toBe([$this->spyA]);
         });
     });
 
@@ -73,13 +73,13 @@ describe('EventEmitter', function () {
             $this->emitter->on('eventA', $this->spyA);
             $this->emitter->on('eventB', $this->spyA);
 
-            expect($this->emitter->listeners('eventA'))->to->be->equal([$this->spyA, $this->spyB, $this->spyA]);
-            expect($this->emitter->listeners('eventB'))->to->be->equal([$this->spyA]);
+            expect($this->emitter->listeners('eventA'))->toBe([$this->spyA, $this->spyB, $this->spyA]);
+            expect($this->emitter->listeners('eventB'))->toBe([$this->spyA]);
 
             $this->emitter->removeAllListeners('eventA');
 
-            expect($this->emitter->listeners('eventA'))->to->be->equal([]);
-            expect($this->emitter->listeners('eventB'))->to->be->equal([$this->spyA]);
+            expect($this->emitter->listeners('eventA'))->toBe([]);
+            expect($this->emitter->listeners('eventB'))->toBe([$this->spyA]);
         });
 
         it('removes all listeners from all events', function () {
@@ -88,19 +88,19 @@ describe('EventEmitter', function () {
             $this->emitter->on('eventA', $this->spyA);
             $this->emitter->on('eventB', $this->spyA);
 
-            expect($this->emitter->listeners('eventA'))->to->be->equal([$this->spyA, $this->spyB, $this->spyA]);
-            expect($this->emitter->listeners('eventB'))->to->be->equal([$this->spyA]);
+            expect($this->emitter->listeners('eventA'))->toBe([$this->spyA, $this->spyB, $this->spyA]);
+            expect($this->emitter->listeners('eventB'))->toBe([$this->spyA]);
 
             $this->emitter->removeAllListeners();
 
-            expect($this->emitter->listeners('eventA'))->to->be->equal([]);
-            expect($this->emitter->listeners('eventB'))->to->be->equal([]);
+            expect($this->emitter->listeners('eventA'))->toBe([]);
+            expect($this->emitter->listeners('eventB'))->toBe([]);
         });
     });
 
     describe('listeners()', function () {
         it('returns the existing listeners', function () {
-            expect($this->emitter->listeners('eventA'))->to->be->equal([]);
+            expect($this->emitter->listeners('eventA'))->toBe([]);
 
             $this->emitter->on('eventA', $this->spyA);
             $this->emitter->on('eventB', $this->spyB);
@@ -108,8 +108,8 @@ describe('EventEmitter', function () {
             $this->emitter->on('eventB', $this->spyD);
             $this->emitter->on('eventA', $this->spyA);
 
-            expect($this->emitter->listeners('eventA'))->to->be->equal([$this->spyA, $this->spyC, $this->spyA]);
-            expect($this->emitter->listeners('eventB'))->to->be->equal([$this->spyB, $this->spyD]);
+            expect($this->emitter->listeners('eventA'))->toBe([$this->spyA, $this->spyC, $this->spyA]);
+            expect($this->emitter->listeners('eventB'))->toBe([$this->spyB, $this->spyD]);
         });
     });
 

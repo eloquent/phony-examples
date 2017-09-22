@@ -14,16 +14,11 @@
     "require": {
         "php": ">=7.0",
         "ext-pdo": "*",
-        "danielstjules/pho": "^1",
         "eloquent/phony": "dev-php72",
         "eloquent/phony-kahlan": "dev-php72",
-        "eloquent/phony-pho": "dev-php72",
         "eloquent/phony-phpunit": "dev-php72",
         "errors/exceptions": "^0.2",
-        "peridot-php/leo": "^1",
-        "peridot-php/peridot": "^1",
-        "phpunit/php-code-coverage": "^5",
-        "phpunit/phpunit": "^6"
+        "phpunit/php-code-coverage": "^5"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2"
