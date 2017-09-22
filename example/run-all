@@ -7,6 +7,11 @@ echo
 "${BASH_SOURCE%/*}/kahlan/run"
 echo
 
+echo "Peridot examples ----------------------------------------------------------------"
+echo
+"${BASH_SOURCE%/*}/peridot/run"
+echo
+
 echo "Pho examples -------------------------------------------------------------------"
 echo
 "${BASH_SOURCE%/*}/pho/run"

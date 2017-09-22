@@ -1,0 +1,13 @@
+{
+    "require": {
+        "eloquent/phony-peridot": "dev-php72",
+        "errors/exceptions": "^0.2",
+        "peridot-php/leo": "^1",
+        "peridot-php/peridot-code-coverage-reporters": "^3"
+    },
+    "autoload": {
+      "classmap": ["../../src"]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
