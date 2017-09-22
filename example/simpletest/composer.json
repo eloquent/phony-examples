@@ -1,0 +1,11 @@
+{
+    "require": {
+        "eloquent/phony-simpletest": "^1",
+        "errors/exceptions": "^0.2"
+    },
+    "autoload": {
+      "classmap": ["../../src"]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

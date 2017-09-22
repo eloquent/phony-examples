@@ -21,3 +21,8 @@ echo "PHPUnit examples ---------------------------------------------------------
 echo
 "${BASH_SOURCE%/*}/phpunit/run"
 echo
+
+echo "SimpleTest examples ------------------------------------------------------------"
+echo
+"${BASH_SOURCE%/*}/simpletest/run"
+echo

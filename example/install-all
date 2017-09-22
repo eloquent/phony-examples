@@ -21,3 +21,8 @@ echo "Installing PHPUnit examples ----------------------------------------------
 echo
 "${BASH_SOURCE%/*}/phpunit/install"
 echo
+
+echo "Installing SimpleTest examples -------------------------------------------------"
+echo
+"${BASH_SOURCE%/*}/simpletest/install"
+echo
