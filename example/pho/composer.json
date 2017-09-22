@@ -1,0 +1,11 @@
+{
+    "require": {
+        "eloquent/phony-pho": "dev-php72",
+        "errors/exceptions": "^0.2"
+    },
+    "autoload": {
+      "classmap": ["../../src"]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

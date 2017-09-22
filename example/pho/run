@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+pushd "${BASH_SOURCE%/*}"
+phpdbg -qrr vendor/bin/pho
+popd

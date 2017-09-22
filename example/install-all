@@ -3,7 +3,13 @@
 set -e
 
 echo "Installing Kahlan examples -----------------------------------------------------"
+echo
 "${BASH_SOURCE%/*}/kahlan/install"
+echo
+
+echo "Installing Pho examples --------------------------------------------------------"
+echo
+"${BASH_SOURCE%/*}/pho/install"
 echo
 
 echo "Installing PHPUnit examples ----------------------------------------------------"

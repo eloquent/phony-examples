@@ -3,7 +3,13 @@
 set -e
 
 echo "Kahlan examples ----------------------------------------------------------------"
+echo
 "${BASH_SOURCE%/*}/kahlan/run"
+echo
+
+echo "Pho examples -------------------------------------------------------------------"
+echo
+"${BASH_SOURCE%/*}/pho/run"
 echo
 
 echo "PHPUnit examples ---------------------------------------------------------------"
