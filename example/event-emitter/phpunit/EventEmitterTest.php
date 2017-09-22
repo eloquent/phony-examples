@@ -1,8 +1,9 @@
 <?php
 
 use Eloquent\Phony\Phpunit\Phony;
+use PHPUnit\Framework\TestCase;
 
-class EventEmitterTest extends PHPUnit_Framework_TestCase
+class EventEmitterTest extends TestCase
 {
     protected function setUp()
     {

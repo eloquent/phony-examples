@@ -1,3 +1,4 @@
 /example/**/coverage/
 /php-cs-fixer
 /vendor/
+/.php_cs.cache

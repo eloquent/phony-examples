@@ -12,17 +12,22 @@
         }
     ],
     "require": {
-        "php": ">=7.0"
-    },
-    "require-dev": {
+        "php": ">=7.0",
         "ext-pdo": "*",
         "danielstjules/pho": "^1",
-        "eloquent/phony": "dev-master",
-        "errors/exceptions": "dev-master",
+        "eloquent/phony": "dev-php72",
+        "eloquent/phony-kahlan": "dev-php72",
+        "eloquent/phony-pho": "dev-php72",
+        "eloquent/phony-phpunit": "dev-php72",
+        "errors/exceptions": "^0.2",
         "peridot-php/leo": "^1",
         "peridot-php/peridot": "^1",
-        "phpunit/php-code-coverage": "^4",
-        "phpunit/phpunit": "^5",
-        "simpletest/simpletest": "^1"
-    }
+        "phpunit/php-code-coverage": "^5",
+        "phpunit/phpunit": "^6"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

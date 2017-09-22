@@ -18,8 +18,3 @@ echo "PHPUnit example ----------------------------------------------------------
 echo
 "${BASH_SOURCE%/*}/$EXAMPLE/phpunit/run"
 echo
-
-echo "SimpleTest example -------------------------------------------------------------"
-echo
-"${BASH_SOURCE%/*}/$EXAMPLE/simpletest/run"
-echo

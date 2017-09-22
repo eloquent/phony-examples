@@ -1,19 +1,11 @@
+.PHONY: examples
 examples: install
 	example/run-all
 
-lint: php-cs-fixer
-	./php-cs-fixer fix --using-cache no
+.PHONY: lint
+lint: install
+	vendor/bin/php-cs-fixer fix
 
-install: vendor/autoload.php
-
-.PHONY: examples lint install
-
-vendor/autoload.php: composer.lock
+.PHONY: install
+install:
 	composer install
-
-composer.lock: composer.json
-	composer update
-
-php-cs-fixer:
-	curl -sSL https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases/download/v2.0.0/php-cs-fixer.phar -o php-cs-fixer
-	chmod +x php-cs-fixer

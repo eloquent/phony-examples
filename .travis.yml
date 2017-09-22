@@ -10,6 +10,10 @@ before_install:
 install: composer install --prefer-dist --no-progress --no-interaction --optimize-autoloader --ignore-platform-reqs
 script: make examples
 
+env:
+    global:
+        - secure: "dhEqrgmxnzOqmIywLDo5K/oGNzl7kZNWuhnKD5CQEW8Wp0sQsQXyhdVMH2snwwpyADlFHgwzDRcwG4RCoDiuud+M41tSVQabza43qcE6TSfstqBMl4g9j12kjmOQPUH2VTdIIMtKaVyXlpRQ7n13aEc2rJWdow5pzyp5f3RsLVQtf0XCQDCXPdJi5xlYm4Ln6ynRIHvxVi8Q9HBKgx4dcEPl95Se2KjveGnH7aHXjJVS/70riRLaPBU8t2wahQwqp+oXET81CuJoiezjirAvmvNqO7uoG+D6HlVajj4nYqVmStfYUEojZPRXqUfTkjLxeSVYJHBOO4bQB1DC5q1Y5ivMOGTBlTIF40zgtKUVA/RZxHkaVEY0ohqhfZsSF+A54YJWqaKarkQNtJ8fDip1zgKrAQCY9pDPXZm08Erogt9gwHAtGcveHz9Os8FATZ2e1u8HVfoYpuy/+bIC6fmAWi4Ugy0xCWrPn6PdKnxNlMOOcpnIiGD0zj+n0qwswYT41S4wm3pjLhT5DHsoKnzGGZ8/G29dBBf6t82Ofd5ujbpFx2h/k6Wf4ID4RU9U2NFI5NIDhkTBw4t4nuaS92iP1bV4SF8MKwgzLUH66JKYy8p1CHjJIPCe/bBE1YtoRULnk1jXZccOxLuJ5kAZUQdzCS4jhSUePU/oR01M2KiX/cY="
+
 cache:
     directories:
         - $HOME/.composer
