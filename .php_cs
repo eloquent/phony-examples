@@ -2,9 +2,7 @@
 
 $finder = PhpCsFixer\Finder::create()
     ->in(__DIR__)
-    ->exclude([
-        'vendor'
-    ]);
+    ->notPath('/vendor/');
 
 return PhpCsFixer\Config::create()
     ->setRules([

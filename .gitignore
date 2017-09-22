@@ -1,4 +1,5 @@
+/example/**/.git/
 /example/**/coverage/
-/php-cs-fixer
+/example/**/vendor/
 /vendor/
 /.php_cs.cache

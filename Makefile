@@ -1,5 +1,6 @@
 .PHONY: examples
-examples: install
+examples:
+	example/install-all
 	example/run-all
 
 .PHONY: lint

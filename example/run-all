@@ -2,15 +2,11 @@
 
 set -e
 
-EXAMPLE="event-emitter"
-echo "Event emitter examples ========================================================="
+echo "Kahlan examples ----------------------------------------------------------------"
+"${BASH_SOURCE%/*}/kahlan/run"
 echo
 
-echo "Kahlan example -----------------------------------------------------------------"
-"${BASH_SOURCE%/*}/$EXAMPLE/kahlan/run"
+echo "PHPUnit examples ---------------------------------------------------------------"
 echo
-
-echo "PHPUnit example ----------------------------------------------------------------"
-echo
-"${BASH_SOURCE%/*}/$EXAMPLE/phpunit/run"
+"${BASH_SOURCE%/*}/phpunit/run"
 echo

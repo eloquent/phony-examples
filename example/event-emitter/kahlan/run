@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-phpdbg -qrr "${BASH_SOURCE%/*}/../../../vendor/bin/kahlan" "--config=${BASH_SOURCE%/*}/kahlan-config.php" "--spec=${BASH_SOURCE%/*}"

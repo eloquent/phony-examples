@@ -1,0 +1,242 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f20b05cd4a5a96a25db018be50105e1f",
+    "packages": [
+        {
+            "name": "eloquent/phony",
+            "version": "dev-php72",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eloquent/phony.git",
+                "reference": "3d2bafdcce05fb777e7786f6cf230a98d2b19b9f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eloquent/phony/zipball/3d2bafdcce05fb777e7786f6cf230a98d2b19b9f",
+                "reference": "3d2bafdcce05fb777e7786f6cf230a98d2b19b9f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7"
+            },
+            "require-dev": {
+                "errors/exceptions": "^0.2",
+                "ext-pdo": "*",
+                "friendsofphp/php-cs-fixer": "^2",
+                "hamcrest/hamcrest-php": "^2",
+                "icecave/semver": "^3",
+                "phpunit/phpunit": "^6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Eloquent\\Phony\\": "src"
+                },
+                "files": [
+                    "src/initialize.php",
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Erin Millard",
+                    "email": "ezzatron@gmail.com",
+                    "homepage": "http://ezzatron.com/"
+                }
+            ],
+            "description": "Mocks, stubs, and spies for PHP.",
+            "homepage": "http://eloquent-software.com/phony/",
+            "keywords": [
+                "Double",
+                "Dummy",
+                "fake",
+                "mock",
+                "mocking",
+                "spy",
+                "stub",
+                "stubbing",
+                "test"
+            ],
+            "time": "2017-09-21T13:10:05+00:00"
+        },
+        {
+            "name": "eloquent/phony-kahlan",
+            "version": "dev-php72",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eloquent/phony-kahlan.git",
+                "reference": "de567b840e77ba854a80c6ce27988e6de031ddbe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eloquent/phony-kahlan/zipball/de567b840e77ba854a80c6ce27988e6de031ddbe",
+                "reference": "de567b840e77ba854a80c6ce27988e6de031ddbe",
+                "shasum": ""
+            },
+            "require": {
+                "eloquent/phony": "dev-php72",
+                "kahlan/kahlan": "4.0.x-dev",
+                "php": ">=7"
+            },
+            "require-dev": {
+                "errors/exceptions": "^0.2",
+                "friendsofphp/php-cs-fixer": "^2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Eloquent\\Phony\\Kahlan\\": "src"
+                },
+                "files": [
+                    "src/initialize.php",
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Erin Millard",
+                    "email": "ezzatron@gmail.com",
+                    "homepage": "http://ezzatron.com/"
+                }
+            ],
+            "description": "Phony for Kahlan.",
+            "homepage": "http://eloquent-software.com/phony/",
+            "keywords": [
+                "Double",
+                "Dummy",
+                "fake",
+                "mock",
+                "mocking",
+                "spy",
+                "stub",
+                "stubbing",
+                "test"
+            ],
+            "time": "2017-09-21T13:10:31+00:00"
+        },
+        {
+            "name": "errors/exceptions",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-errors/exceptions.git",
+                "reference": "8115762ac206196d355f644de4b4623fa81d27f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-errors/exceptions/zipball/8115762ac206196d355f644de4b4623fa81d27f2",
+                "reference": "8115762ac206196d355f644de4b4623fa81d27f2",
+                "shasum": ""
+            },
+            "conflict": {
+                "errors/native": "*"
+            },
+            "require-dev": {
+                "errors/specification": "^0.1"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/handler.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Erin Millard",
+                    "email": "ezzatron@gmail.com",
+                    "homepage": "http://ezzatron.com/"
+                }
+            ],
+            "description": "An error handler that produces error exceptions when a native error occurs.",
+            "homepage": "https://github.com/php-errors/exceptions",
+            "keywords": [
+                "error",
+                "errorexception",
+                "errors",
+                "exception",
+                "handler"
+            ],
+            "time": "2017-07-03T23:04:46+00:00"
+        },
+        {
+            "name": "kahlan/kahlan",
+            "version": "4.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kahlan/kahlan.git",
+                "reference": "6d27486a70c02f2c1e9428bddf8233fe4d41843e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kahlan/kahlan/zipball/6d27486a70c02f2c1e9428bddf8233fe4d41843e",
+                "reference": "6d27486a70c02f2c1e9428bddf8233fe4d41843e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "bin": [
+                "bin/kahlan"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kahlan\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "CrysaLEAD"
+                }
+            ],
+            "description": "The PHP Test Framework for Freedom, Truth and Justice.",
+            "keywords": [
+                "BDD",
+                "Behavior-Driven Development",
+                "Monkey Patching",
+                "TDD",
+                "mock",
+                "stub",
+                "testing",
+                "unit test"
+            ],
+            "time": "2017-08-13T00:46:32+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "eloquent/phony-kahlan": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

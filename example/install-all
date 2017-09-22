@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo "Installing Kahlan examples -----------------------------------------------------"
+"${BASH_SOURCE%/*}/kahlan/install"
+echo
+
+echo "Installing PHPUnit examples ----------------------------------------------------"
+echo
+"${BASH_SOURCE%/*}/phpunit/install"
+echo
