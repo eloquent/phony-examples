@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1300ddceaef468d1ebcd6850b64bfc2e",
+    "content-hash": "86d252bed75947ae001874f9ffe40cfc",
     "packages": [
         {
             "name": "danielstjules/pho",
@@ -57,16 +57,16 @@
         },
         {
             "name": "eloquent/phony",
-            "version": "dev-php72",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eloquent/phony.git",
-                "reference": "3d2bafdcce05fb777e7786f6cf230a98d2b19b9f"
+                "reference": "96c6618d54b21b01eacf4b8aea5a279496b466f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eloquent/phony/zipball/3d2bafdcce05fb777e7786f6cf230a98d2b19b9f",
-                "reference": "3d2bafdcce05fb777e7786f6cf230a98d2b19b9f",
+                "url": "https://api.github.com/repos/eloquent/phony/zipball/96c6618d54b21b01eacf4b8aea5a279496b466f6",
+                "reference": "96c6618d54b21b01eacf4b8aea5a279496b466f6",
                 "shasum": ""
             },
             "require": {
@@ -114,25 +114,25 @@
                 "stubbing",
                 "test"
             ],
-            "time": "2017-09-21T13:10:05+00:00"
+            "time": "2017-09-29T01:22:33+00:00"
         },
         {
             "name": "eloquent/phony-pho",
-            "version": "dev-php72",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eloquent/phony-pho.git",
-                "reference": "44b07c13d628c8e71155e804c9e6a241616ff2b6"
+                "reference": "f88e984d1689e3210a1d47d95959fb8a0c200b92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eloquent/phony-pho/zipball/44b07c13d628c8e71155e804c9e6a241616ff2b6",
-                "reference": "44b07c13d628c8e71155e804c9e6a241616ff2b6",
+                "url": "https://api.github.com/repos/eloquent/phony-pho/zipball/f88e984d1689e3210a1d47d95959fb8a0c200b92",
+                "reference": "f88e984d1689e3210a1d47d95959fb8a0c200b92",
                 "shasum": ""
             },
             "require": {
                 "danielstjules/pho": "^1",
-                "eloquent/phony": "dev-php72",
+                "eloquent/phony": "^2",
                 "php": ">=7"
             },
             "require-dev": {
@@ -174,7 +174,7 @@
                 "stubbing",
                 "test"
             ],
-            "time": "2017-09-21T13:15:34+00:00"
+            "time": "2017-09-29T03:24:19+00:00"
         },
         {
             "name": "errors/exceptions",
@@ -227,11 +227,9 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "eloquent/phony-pho": 20
-    },
-    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []

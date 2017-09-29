@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c567def4add8b9bc34612aded31a8591",
+    "content-hash": "38988322214ed57291fcdc85b0b7d781",
     "packages": [
         {
             "name": "eloquent/phony",
-            "version": "dev-php72",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eloquent/phony.git",
-                "reference": "3d2bafdcce05fb777e7786f6cf230a98d2b19b9f"
+                "reference": "96c6618d54b21b01eacf4b8aea5a279496b466f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eloquent/phony/zipball/3d2bafdcce05fb777e7786f6cf230a98d2b19b9f",
-                "reference": "3d2bafdcce05fb777e7786f6cf230a98d2b19b9f",
+                "url": "https://api.github.com/repos/eloquent/phony/zipball/96c6618d54b21b01eacf4b8aea5a279496b466f6",
+                "reference": "96c6618d54b21b01eacf4b8aea5a279496b466f6",
                 "shasum": ""
             },
             "require": {
@@ -65,24 +65,24 @@
                 "stubbing",
                 "test"
             ],
-            "time": "2017-09-21T13:10:05+00:00"
+            "time": "2017-09-29T01:22:33+00:00"
         },
         {
             "name": "eloquent/phony-peridot",
-            "version": "dev-php72",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eloquent/phony-peridot.git",
-                "reference": "0059e7ca8dfed578600b56292425d278beb3e4a0"
+                "reference": "a0ee3b0b030496090deff076501717f503758be1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eloquent/phony-peridot/zipball/0059e7ca8dfed578600b56292425d278beb3e4a0",
-                "reference": "0059e7ca8dfed578600b56292425d278beb3e4a0",
+                "url": "https://api.github.com/repos/eloquent/phony-peridot/zipball/a0ee3b0b030496090deff076501717f503758be1",
+                "reference": "a0ee3b0b030496090deff076501717f503758be1",
                 "shasum": ""
             },
             "require": {
-                "eloquent/phony": "dev-php72",
+                "eloquent/phony": "^2",
                 "peridot-php/peridot": "^1",
                 "php": ">=7"
             },
@@ -124,7 +124,7 @@
                 "stubbing",
                 "test"
             ],
-            "time": "2017-09-21T12:58:01+00:00"
+            "time": "2017-09-29T03:02:48+00:00"
         },
         {
             "name": "errors/exceptions",
@@ -1072,11 +1072,9 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "eloquent/phony-peridot": 20
-    },
-    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []

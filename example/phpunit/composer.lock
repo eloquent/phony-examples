@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fba363176e259d740740f9d75c612935",
+    "content-hash": "e33f801a5a92cf86a25778636569efbb",
     "packages": [
         {
             "name": "doctrine/instantiator",
@@ -62,16 +62,16 @@
         },
         {
             "name": "eloquent/phony",
-            "version": "dev-php72",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eloquent/phony.git",
-                "reference": "3d2bafdcce05fb777e7786f6cf230a98d2b19b9f"
+                "reference": "96c6618d54b21b01eacf4b8aea5a279496b466f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eloquent/phony/zipball/3d2bafdcce05fb777e7786f6cf230a98d2b19b9f",
-                "reference": "3d2bafdcce05fb777e7786f6cf230a98d2b19b9f",
+                "url": "https://api.github.com/repos/eloquent/phony/zipball/96c6618d54b21b01eacf4b8aea5a279496b466f6",
+                "reference": "96c6618d54b21b01eacf4b8aea5a279496b466f6",
                 "shasum": ""
             },
             "require": {
@@ -119,24 +119,24 @@
                 "stubbing",
                 "test"
             ],
-            "time": "2017-09-21T13:10:05+00:00"
+            "time": "2017-09-29T01:22:33+00:00"
         },
         {
             "name": "eloquent/phony-phpunit",
-            "version": "dev-php72",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eloquent/phony-phpunit.git",
-                "reference": "2416d744652d452378d377a43130c80a5bc3a955"
+                "reference": "8b17d8ca52048b4615650b061fd9a5604ab8c799"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eloquent/phony-phpunit/zipball/2416d744652d452378d377a43130c80a5bc3a955",
-                "reference": "2416d744652d452378d377a43130c80a5bc3a955",
+                "url": "https://api.github.com/repos/eloquent/phony-phpunit/zipball/8b17d8ca52048b4615650b061fd9a5604ab8c799",
+                "reference": "8b17d8ca52048b4615650b061fd9a5604ab8c799",
                 "shasum": ""
             },
             "require": {
-                "eloquent/phony": "dev-php72",
+                "eloquent/phony": "^2",
                 "php": ">=7",
                 "phpunit/phpunit": "^6"
             },
@@ -178,7 +178,7 @@
                 "stubbing",
                 "test"
             ],
-            "time": "2017-09-21T13:11:12+00:00"
+            "time": "2017-09-29T02:12:51+00:00"
         },
         {
             "name": "errors/exceptions",
@@ -833,16 +833,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "6.3.0",
+            "version": "6.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "9501bab711403a1ab5b8378a8adb4ec3db3debdb"
+                "reference": "c0ff817b36a827e64bf5f57bc72278150cf30a77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9501bab711403a1ab5b8378a8adb4ec3db3debdb",
-                "reference": "9501bab711403a1ab5b8378a8adb4ec3db3debdb",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c0ff817b36a827e64bf5f57bc72278150cf30a77",
+                "reference": "c0ff817b36a827e64bf5f57bc72278150cf30a77",
                 "shasum": ""
             },
             "require": {
@@ -913,7 +913,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-08-04T05:20:39+00:00"
+            "time": "2017-09-24T07:25:54+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1626,11 +1626,9 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "eloquent/phony-phpunit": 20
-    },
-    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []

@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f20b05cd4a5a96a25db018be50105e1f",
+    "content-hash": "1ab638a8eec73926dabac01a72d9deff",
     "packages": [
         {
             "name": "eloquent/phony",
-            "version": "dev-php72",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eloquent/phony.git",
-                "reference": "3d2bafdcce05fb777e7786f6cf230a98d2b19b9f"
+                "reference": "96c6618d54b21b01eacf4b8aea5a279496b466f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eloquent/phony/zipball/3d2bafdcce05fb777e7786f6cf230a98d2b19b9f",
-                "reference": "3d2bafdcce05fb777e7786f6cf230a98d2b19b9f",
+                "url": "https://api.github.com/repos/eloquent/phony/zipball/96c6618d54b21b01eacf4b8aea5a279496b466f6",
+                "reference": "96c6618d54b21b01eacf4b8aea5a279496b466f6",
                 "shasum": ""
             },
             "require": {
@@ -65,24 +65,24 @@
                 "stubbing",
                 "test"
             ],
-            "time": "2017-09-21T13:10:05+00:00"
+            "time": "2017-09-29T01:22:33+00:00"
         },
         {
             "name": "eloquent/phony-kahlan",
-            "version": "dev-php72",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eloquent/phony-kahlan.git",
-                "reference": "de567b840e77ba854a80c6ce27988e6de031ddbe"
+                "reference": "17f43474279e58176531ea5cb357019852006763"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eloquent/phony-kahlan/zipball/de567b840e77ba854a80c6ce27988e6de031ddbe",
-                "reference": "de567b840e77ba854a80c6ce27988e6de031ddbe",
+                "url": "https://api.github.com/repos/eloquent/phony-kahlan/zipball/17f43474279e58176531ea5cb357019852006763",
+                "reference": "17f43474279e58176531ea5cb357019852006763",
                 "shasum": ""
             },
             "require": {
-                "eloquent/phony": "dev-php72",
+                "eloquent/phony": "^2",
                 "kahlan/kahlan": "4.0.x-dev",
                 "php": ">=7"
             },
@@ -124,7 +124,7 @@
                 "stubbing",
                 "test"
             ],
-            "time": "2017-09-21T13:10:31+00:00"
+            "time": "2017-09-29T02:32:04+00:00"
         },
         {
             "name": "errors/exceptions",
@@ -232,10 +232,8 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "eloquent/phony-kahlan": 20
-    },
-    "prefer-stable": true,
+    "stability-flags": [],
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
