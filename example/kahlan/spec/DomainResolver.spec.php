@@ -4,15 +4,15 @@ namespace Example\Dns;
 
 use Psr\SimpleCache\CacheInterface;
 use RuntimeException;
-use function Eloquent\Phony\Kahlan\mock;
+use function Eloquent\Phony\Kahlan\on;
 use function Eloquent\Phony\Kahlan\restoreGlobalFunctions;
 use function Eloquent\Phony\Kahlan\stubGlobal;
 
 describe('DomainResolver', function () {
-    beforeEach(function () {
-        $this->cache = mock(CacheInterface::class);
-        $this->resolver = new DomainResolver($this->cache->get());
+    beforeEach(function (CacheInterface $cache) {
+        $this->resolver = new DomainResolver($cache);
 
+        $this->cache = on($cache);
         $this->gethostbyname = stubGlobal('gethostbyname', __NAMESPACE__);
     });
 

@@ -1,5 +1,7 @@
 <?php
 
+Eloquent\Phony\Kahlan\install();
+
 $commandLine = $this->commandLine();
 $commandLine->option('src', 'default', '../../src');
 $commandLine->option('spec', 'default', 'spec');
