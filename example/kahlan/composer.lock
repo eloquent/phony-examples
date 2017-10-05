@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c0655d731ba2d9dc1974bdd14c6abd4",
+    "content-hash": "589f73e6f0983c4d377a3f27ab270d77",
     "packages": [
         {
             "name": "eloquent/phony",
@@ -69,21 +69,21 @@
         },
         {
             "name": "eloquent/phony-kahlan",
-            "version": "0.3.0",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eloquent/phony-kahlan.git",
-                "reference": "17f43474279e58176531ea5cb357019852006763"
+                "reference": "18b9f48c51f0459505bb89ebb4315ad684eb0378"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eloquent/phony-kahlan/zipball/17f43474279e58176531ea5cb357019852006763",
-                "reference": "17f43474279e58176531ea5cb357019852006763",
+                "url": "https://api.github.com/repos/eloquent/phony-kahlan/zipball/18b9f48c51f0459505bb89ebb4315ad684eb0378",
+                "reference": "18b9f48c51f0459505bb89ebb4315ad684eb0378",
                 "shasum": ""
             },
             "require": {
                 "eloquent/phony": "^2",
-                "kahlan/kahlan": "4.0.x-dev",
+                "kahlan/kahlan": "^4",
                 "php": ">=7"
             },
             "require-dev": {
@@ -124,7 +124,7 @@
                 "stubbing",
                 "test"
             ],
-            "time": "2017-09-29T02:32:04+00:00"
+            "time": "2017-10-05T00:15:50+00:00"
         },
         {
             "name": "errors/exceptions",
@@ -176,16 +176,16 @@
         },
         {
             "name": "kahlan/kahlan",
-            "version": "4.0.x-dev",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kahlan/kahlan.git",
-                "reference": "2ba505fe3e9d0c08b79acfc2196edc98ff53bd80"
+                "reference": "1edbcb3443a2bdb4b1df30b57f4a69a1c27c575f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kahlan/kahlan/zipball/2ba505fe3e9d0c08b79acfc2196edc98ff53bd80",
-                "reference": "2ba505fe3e9d0c08b79acfc2196edc98ff53bd80",
+                "url": "https://api.github.com/repos/kahlan/kahlan/zipball/1edbcb3443a2bdb4b1df30b57f4a69a1c27c575f",
+                "reference": "1edbcb3443a2bdb4b1df30b57f4a69a1c27c575f",
                 "shasum": ""
             },
             "require": {
@@ -226,11 +226,11 @@
                 "testing",
                 "unit test"
             ],
-            "time": "2017-10-01T00:50:02+00:00"
+            "time": "2017-10-04T22:54:01+00:00"
         },
         {
             "name": "psr/simple-cache",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/simple-cache.git",
@@ -279,7 +279,7 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
