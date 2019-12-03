@@ -5,7 +5,7 @@ use PHPUnit\Framework\TestCase;
 
 class EventEmitterTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->emitter = new EventEmitter();
 

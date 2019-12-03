@@ -2,11 +2,11 @@
 
 namespace Example\Dns;
 
-use Psr\SimpleCache\CacheInterface;
-use RuntimeException;
 use function Eloquent\Phony\Kahlan\on;
 use function Eloquent\Phony\Kahlan\restoreGlobalFunctions;
 use function Eloquent\Phony\Kahlan\stubGlobal;
+use Psr\SimpleCache\CacheInterface;
+use RuntimeException;
 
 describe('DomainResolver', function () {
     beforeEach(function (CacheInterface $cache) {

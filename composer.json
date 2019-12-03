@@ -12,6 +12,7 @@
         }
     ],
     "require-dev": {
+        "eloquent/code-style": "^1",
         "friendsofphp/php-cs-fixer": "^2"
     }
 }

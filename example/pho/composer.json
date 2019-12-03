@@ -1,9 +1,0 @@
-{
-    "require": {
-        "eloquent/phony-pho": "^2",
-        "errors/exceptions": "^0.2"
-    },
-    "autoload": {
-      "classmap": ["../../src"]
-    }
-}

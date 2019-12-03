@@ -1,5 +1,9 @@
+/.makefiles/
+/artifacts/
+/composer.lock
 /example/**/.git/
+/example/**/.phpunit.result.cache
+/example/**/composer.lock
 /example/**/coverage/
 /example/**/vendor/
 /vendor/
-/.php_cs.cache
