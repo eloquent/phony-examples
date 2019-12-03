@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-pushd "${BASH_SOURCE%/*}"
-composer install
-popd

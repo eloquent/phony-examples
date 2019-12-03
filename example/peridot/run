@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 pushd "${BASH_SOURCE%/*}"
-phpdbg -qrr vendor/bin/peridot --force-colors
+phpdbg -d=pcov.enabled=0 -qrr vendor/bin/peridot --force-colors
 popd
