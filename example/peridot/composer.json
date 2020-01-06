@@ -1,6 +1,6 @@
 {
     "require": {
-        "eloquent/phony-peridot": "^2",
+        "eloquent/phony-peridot": "^3",
         "errors/exceptions": "^0.2",
         "peridot-php/leo": "^1",
         "peridot-php/peridot": "^1",

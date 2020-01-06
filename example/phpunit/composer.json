@@ -1,6 +1,6 @@
 {
     "require": {
-        "eloquent/phony-phpunit": "^5",
+        "eloquent/phony-phpunit": "^6",
         "errors/exceptions": "^0.2",
         "phpunit/phpunit": "^8"
     },

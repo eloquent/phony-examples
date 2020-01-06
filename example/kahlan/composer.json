@@ -1,6 +1,6 @@
 {
     "require": {
-        "eloquent/phony-kahlan": "^2",
+        "eloquent/phony-kahlan": "^3",
         "errors/exceptions": "^0.2",
         "kahlan/kahlan": "^4",
         "psr/simple-cache": "^1"
